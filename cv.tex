@@ -102,7 +102,7 @@
 \newenvironment{jobshort}[2]
     {
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    #1 & \hfill &  #2 \\[3.75pt]
     \end{tabularx}
     }
     {
@@ -111,7 +111,7 @@
 \newenvironment{joblong}[2]
     {
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    #1 & \hfill &  #2 \\[3.75pt]
     \end{tabularx}
     \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
@@ -182,41 +182,22 @@ long long line of blah blah that will wrap when the table fills the column width
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}X r@{}}	
-\textbf{CUNY New York City College of Technology}, Bachelor of Science & Jan 2024 -- Dec 2025 \\
-\end{tabularx}
-
-\vspace{-0.5\baselineskip} % pulls bullet list closer
-
-\begin{itemize}[leftmargin=*]
+\begin{joblong}{\textbf{CUNY New York City College of Technology}, Bachelor of Science}{Jan 2024 -- Dec 2025}
 \item Major: Applied Computational Physics, Overall GPA: 4.00/4.00
 \item Relevant Coursework: Statistical Physics and Thermodynamics, Electricity and Magnetism, Classical Mechanics, Quantum Mechanics, Modern Physics, Machine Learning for Physics, Partial Differential Equations, Computational Astrophysics (CUNY Graduate Center)
-\end{itemize}
+\end{joblong}
 
-\begin{tabularx}{\linewidth}{@{}X r@{}}	
-\textbf{CUNY Borough of Manhattan Community College} & Jan -- Dec 2023 \\
-\end{tabularx}
-
-\vspace{-0.5\baselineskip} % pulls bullet list closer
-
-\begin{itemize}[leftmargin=*]
+\begin{joblong}{\textbf{CUNY Borough of Manhattan Community College}}{Jan -- Dec 2023}
 \item Overall GPA: 4.00/4.00
 \item Relevant coursework: General Astronomy, University Physics I, Ordinary Differential Equations
-\end{itemize}
+\end{joblong}
 
-\begin{tabularx}{\linewidth}{@{}X r@{}}	
-\textbf{Colgate University}, Bachelor of Arts & Sep 2016 -- Dec 2019 \\
-\end{tabularx}
-
-\vspace{-0.5\baselineskip} % pulls bullet list closer
-
-\begin{itemize}[leftmargin=*]
+\begin{joblong}{\textbf{Colgate University}, Bachelor of Arts}{Sep 2016 -- Dec 2019}
 \item Major: Mathematical Economics, Major GPA: 3.90/4.00
 \item Graduated \textit{magna cum laude}
 \item Dean's List with Distinction (4 semesters); Dean's List (2 semesters)
 \item Relevant Coursework: Computational Mathematics, Computer Science II, Computer Organization, Linear Algebra, Multivariable Calculus, Probability
-\end{itemize}
+\end{joblong}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
