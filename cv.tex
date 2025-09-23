@@ -97,15 +97,19 @@
 %debug page outer frames
 %\usepackage{showframe}
 
+\usepackage[none]{hyphenat} % in your preamble (disables hyphenation globally)
+\usepackage{array}          % needed for \arraybackslash inside tabularx
 
 % job listing environments
+
 \newenvironment{jobshort}[2]
     {
     \begin{tabularx}{\linewidth}{@{}X r@{}}
-    #1 & #2 \\[3.75pt]
+    {\raggedright\arraybackslash\nohyphens{#1}} & #2 \\[3.75pt]
     \end{tabularx}
     }
     {}
+
 
 
 \newenvironment{joblong}[2]
