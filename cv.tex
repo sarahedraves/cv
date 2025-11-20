@@ -100,6 +100,8 @@
 \usepackage[none]{hyphenat} % in your preamble (disables hyphenation globally)
 \usepackage{array}          % needed for \arraybackslash inside tabularx
 
+\usepackage{changepage} %for identing whole paragraphs
+
 % job listing environments
 
 \newenvironment{jobshort}[2]
@@ -222,9 +224,10 @@ Astrophysics researcher and physics undergraduate with a strong foundation in co
 %Presentations
 \section{Presentations}
 \begin{jobshort}{\textbf{A Library of Light Curves: A Catalogue of All Known Complex Rotators through K2 and TESS}}{7.30.2025}
-Presented at the 2025 Undergraduate Summer Research Symposium at the American Museum of Natural History in New York City.
-\hspace*{2em}
+Presented at the 2025 Undergraduate Summer Research Symposium at the American Museum of Natural History in New York City.\\
+\begin{adjustwidth}{2em}{0pt}
 \small{Abstract: Complex rotators (CRs) are a recently discovered type of young M dwarf star that have unusual light curves, showing periodic behavior that cannot be explained by more typical causes like starspots. Previous studies have focused on identifying CRs and have suffered from a lack of observations over long temporal baselines. In this project, we compiled a data set of previously identified CRs in the literature and their available K2 and TESS light curves. Also using Gaia data, we investigate the similarities between these objects as well as how they change over time. In the multiyear timeframe we looked at (in some cases over a decade), we found CRs changed their complex patterns significantly or lost their complexity entirely. Further analysis of the light curves could yield better insights into the causes of these changes. This data set will be pivotal for others in the field to continue studying this unusual phenomenon.}
+\end{adjustwidth}
 \end{jobshort}
 
 \section{Posters}
